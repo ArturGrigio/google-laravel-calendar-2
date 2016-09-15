@@ -4,7 +4,7 @@ This package is originally by [Spatie](https://spatie.be/opensource). It was usi
 Here is an example of what you can do with the repo:
 
 ```php
-use Spatie\GoogleCalendar\Event;
+use Arturgrigio\GoogleCalendar\Event;
 
 //create a new event
 $event = new Event;
@@ -32,16 +32,6 @@ Event::create([
 // delete an event
 $event->delete();
 ```
-
-Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
-
-## Postcardware
-
-You're free to use this package (it's [MIT-licensed](LICENSE.md)), but if it makes it to your production environment you are required to send us a postcard from your hometown, mentioning which of our package(s) you are using.
-
-Our address is: Spatie, Samberstraat 69D, 2060 Antwerp, Belgium.
-
-The best postcards will get published on the open source page on our website.
 
 ## Installation
 
@@ -192,10 +182,6 @@ $event->delete()
 ### Limitations
 
 The Google Calendar API provides many options. This package doesn't support all of them. For instance recurring events cannot be managed properly with this package. If you stick to creating events with a name and a date you should be fine.
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
 ## Testing
 
