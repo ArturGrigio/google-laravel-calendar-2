@@ -14,7 +14,7 @@ class GoogleCalendarFactory
         $client->setApplicationName(config('app.name'));
         $client->setScopes('https://www.googleapis.com/auth/calendar');
         $client->setAuthConfig($config['client_secret_json']);
-        $client->setAccessType('online');
+        $client->setAccessType('offline');
 
         // Load previously authorized credentials from a file.
         $homeDirectory = getenv('HOME');
