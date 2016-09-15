@@ -81,6 +81,11 @@ return [
      *  The id of the Google Calendar that will be used by default.
      */
     'calendar_id' => '',
+
+    /**
+     *  This is where google will save the credentials
+     */
+    'credentials_path' => storage_path('app/laravel-google-calendar/calendar-php-quickstart.json'),
     
 ];
 ```

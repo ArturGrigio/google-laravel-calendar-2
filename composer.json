@@ -2,12 +2,12 @@
     "name": "arturgrigio/google-laravel-calendar-2",
     "description": "Manage events on a Google Calendar",
     "keywords": [
-        "spatie",
         "calendar",
         "google",
         "event",
         "schedule",
-        "laravel-google-calendar"
+        "laravel-google-calendar",
+        "oauth"
     ],
     "homepage": "https://github.com/ArturGrigio/google-laravel-calendar-2",
     "license": "MIT",
