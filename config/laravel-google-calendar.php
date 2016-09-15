@@ -11,5 +11,9 @@ return [
      *  The id of the Google Calendar that will be used by default.
      */
     'calendar_id' => '',
-    
+
+    /**
+     *  This is where google will save the credentials
+     */
+    'credentials_path' => storage_path('app/calendar-php-quickstart.json'),
 ];

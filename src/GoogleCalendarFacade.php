@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\GoogleCalendar;
+namespace Arturgrigio\GoogleCalendar;
 
 use Illuminate\Support\Facades\Facade;
 
