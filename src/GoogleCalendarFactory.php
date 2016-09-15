@@ -9,21 +9,6 @@ class GoogleCalendarFactory
 {
     public static function createForCalendarId($calendarId): GoogleCalendar
     {
-//        $config = config('laravel-google-calendar');
-//
-//        $client = new Google_Client();
-//
-//        $credentials = $client->loadServiceAccountJson(
-//            $config['client_secret_json'],
-//            'https://www.googleapis.com/auth/calendar'
-//        );
-//
-//        $client->setAssertionCredentials($credentials);
-//
-//        $service = new Google_Service_Calendar($client);
-//
-//        return new GoogleCalendar($service, $calendarId);
-
         $config = config('laravel-google-calendar');
         $client = new Google_Client();
         $client->setApplicationName(config('app.name'));
@@ -45,7 +30,7 @@ class GoogleCalendarFactory
 
             printf("Open the following link in your browser:\n%s\n", $authUrl);
             print 'Enter verification code: ';
-            $authCode = trim('4/NWQuk6Fzhrtcm16bQkLZ6-FKG8Lyq0ftK3EgYCtYhdU#');
+            $authCode = trim(fgets(STDIN));
 
             // Exchange authorization code for an access token.
             $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);

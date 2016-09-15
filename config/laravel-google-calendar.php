@@ -15,5 +15,5 @@ return [
     /**
      *  This is where google will save the credentials
      */
-    'credentials_path' => storage_path('app/calendar-php-quickstart.json'),
+    'credentials_path' => storage_path('app/laravel-google-calendar/calendar-php-quickstart.json'),
 ];
